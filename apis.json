@@ -1,0 +1,33 @@
+{
+	"name": "Streadata.io API Gallery - Healthcare.gov",
+	"description": "This is a repository of healthcare.gov APIs, self-contained as a Github repository, with HTML and YAML representations of the APIs and their surrounding operations.",
+	"image": "http://template.streamdata.gallery/assets/healthcare-gov.png",
+	"created": "2018-02-24",
+	"modified": "2018-08-30",
+	"url": "http://healthcare-gov.streamdata.gallery/apis.json",
+	"specificationVersion": "0.14",
+	"apis": [
+		{
+			"name": "Healthcare.gov",
+			"x-api-slug": "healthcare-gov",
+			"description": "HealthCare.gov is a health insurance exchange website operated under the United States federal government under the provisions of the Patient Protection and Affordable Care Act (ACA, often known as Obamacare), designed to serve the residents of the thirty-six U.S. states that opted not to create their own state exchanges. The exchange facilitates the sale of private health insurance plans to residents of the United States[2] and offers subsidies to those who earn less than four times the federal poverty line. The website also assists those persons who are eligible to sign up for Medicaid, and has a separate marketplace for small businesses.",
+			"image": "http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/Healthcare.gov_logo.png",
+			"humanURL": "http://www.healthcare.gov",
+			"baseURL": "https://www.healthcare.gov//",
+			"tags": "Healthcare.gov",
+			"properties": [
+				{
+					"type": "x-openapi-spec",
+					"url": "https://raw.githubusercontent.com/streamdata-gallery-organizations/healthcare-gov/master/_listings/healthcare-gov/openapi.md"
+				}
+			]
+		}
+	],
+	"tags": "Healthcare.gov",
+	"include": [
+		{
+			"name": "Healthcare.gov",
+			"url": "https://raw.githubusercontent.com/streamdata-gallery-organizations/healthcare-gov/master/_listings/healthcare-gov/apis.yaml"
+		}
+	]
+}

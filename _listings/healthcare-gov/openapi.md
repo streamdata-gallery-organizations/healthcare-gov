@@ -1,4 +1,3 @@
----
 swagger: "2.0"
 x-collection-name: Healthcare.gov
 x-complete: 1
@@ -197,11 +196,11 @@ paths:
       tags:
       - Es
       - Pagename
-  /es/{stateName}{mediaTypeExtension}:
+  /es/{stateName}{mediaTypeExtension}/:
     get:
-      summary: Get Es Statename
+      summary: Get State Name Media Type Extension
       description: Returns pages content.
-      operationId: getEsStatenameMediatypeextension
+      operationId: returns-pages-content
       x-api-path-slug: esstatenamemediatypeextension-get
       parameters:
       - in: path
@@ -213,8 +212,12 @@ paths:
         200:
           description: OK
       tags:
-      - Es
-      - Statename
+      - Insurance
+      - State
+      - Name
+      - Media
+      - Type
+      - Extension
   /glossary/{pageName}{mediaTypeExtension}:
     get:
       summary: Get Glossary Pagename
@@ -268,6 +271,46 @@ paths:
           description: OK
       tags:
       - Pagename
+  /{stateName}{mediaTypeExtension}/:
+    get:
+      summary: Get State Name Media Type Extension
+      description: Returns pages content.
+      operationId: returns-pages-content
+      x-api-path-slug: statenamemediatypeextension-get
+      parameters:
+      - in: path
+        name: mediaTypeExtension
+        description: Omiting the param causes html to be returned
+      - in: path
+        name: stateName
+      responses:
+        200:
+          description: OK
+      tags:
+      - Insurance
+      - State
+      - Name
+      - Media
+      - Type
+      - Extension
+  /es/{stateName}{mediaTypeExtension}:
+    get:
+      summary: Get Es Statename
+      description: Returns pages content.
+      operationId: getEsStatenameMediatypeextension
+      x-api-path-slug: esstatenamemediatypeextension-get
+      parameters:
+      - in: path
+        name: mediaTypeExtension
+        description: Omiting the param causes html to be returned
+      - in: path
+        name: stateName
+      responses:
+        200:
+          description: OK
+      tags:
+      - Es
+      - Statename
   /{stateName}{mediaTypeExtension}:
     get:
       summary: Get Statename
@@ -285,4 +328,3 @@ paths:
           description: OK
       tags:
       - Statename
----
